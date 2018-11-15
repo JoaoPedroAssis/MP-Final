@@ -1,6 +1,6 @@
 IDIR =../include
 CC=g++
-CFLAGS=-I$(IDIR) -ftest-coverage -fprofile-arcs
+CFLAGS=-I$(IDIR) -ftest-coverage -fprofile-arcs -std=gnu++17
 
 ODIR=obj
 LDIR =../lib
