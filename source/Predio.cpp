@@ -5,5 +5,6 @@ void Predio::set_vida(int vida) {
     Predio::vida = vida;
 }
 
-int Predio::get_vida(){
+int Predio::get_vida() {
+    return Predio::vida;
 }
