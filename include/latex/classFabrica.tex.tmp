@@ -1,0 +1,34 @@
+\hypertarget{classFabrica}{}\section{Fabrica Class Reference}
+\label{classFabrica}\index{Fabrica@{Fabrica}}
+
+
+Inheritance diagram for Fabrica\+:
+% FIG 0
+
+
+Collaboration diagram for Fabrica\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries gera\+Unidade} ()\hypertarget{classFabrica_a26844f178f6354923183dafbf446ecd6}{}\label{classFabrica_a26844f178f6354923183dafbf446ecd6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries tempo\+Espera}\hypertarget{classFabrica_aef2dcd50b8f600b5c404cf592e960356}{}\label{classFabrica_aef2dcd50b8f600b5c404cf592e960356}
+
+\item 
+int {\bfseries nivel}\hypertarget{classFabrica_a2d808041fe23d33e2406145325aa49ab}{}\label{classFabrica_a2d808041fe23d33e2406145325aa49ab}
+
+\item 
+int {\bfseries tipo}\hypertarget{classFabrica_a47291849ada1dd194ee0d01ceba6dccb}{}\label{classFabrica_a47291849ada1dd194ee0d01ceba6dccb}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fabrica.\+h\end{DoxyCompactItemize}

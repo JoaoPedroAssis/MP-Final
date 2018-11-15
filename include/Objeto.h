@@ -59,6 +59,7 @@ class Objeto {
     void set_img(char* img);
 
     ~Objeto();
+
  protected:
     int pos_X;
     int pos_Y;

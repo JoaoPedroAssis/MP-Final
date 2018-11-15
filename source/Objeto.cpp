@@ -1,5 +1,4 @@
 // Copyright 2018 João Pedro Assis
-// #include "../include/Head.h"
 #include "../include/Objeto.h"
 
 Objeto::Objeto(int X, int Y, char* image_name) {

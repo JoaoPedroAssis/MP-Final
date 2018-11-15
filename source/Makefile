@@ -7,17 +7,17 @@ LDIR =../lib
 
 LIBS=-lm
 
-_DEPS = Objeto.h
+_DEPS = Predio.h Objeto.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = teste/testeObjeto.o Objeto.o
+_OBJ = teste/testePredio.o Predio.o Objeto.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 
 $(ODIR)/%.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-testaFabrica: $(OBJ)
+testaPredio: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
 .PHONY: clean
