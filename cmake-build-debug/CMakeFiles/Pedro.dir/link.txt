@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPedro.a  CMakeFiles/Pedro.dir/source/GeraRecursos.cpp.o
+/usr/bin/ranlib libPedro.a

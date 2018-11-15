@@ -6,7 +6,22 @@
 #include"../include/Head.h"
 #include"../include/GeraRecursos.h"
 #include"../include/catch.hpp"
-
+/** Teste Construtor
+ *  -----------------
+ *  Testa se as variaveis são incializadas da seguinte forma:
+ *  nivel = 0
+ *  tipo = RECURSO[tipo]
+ *  taxa = TAXA_COLETA
+ */
 TEST_CASE("Construtor da Classe"){
-    REQUIRE(1 == 1);
+    GeraRecursos geradora( RECURSO::PEDREGULHO );
+
+
+    REQUIRE(geradora.getNivel() == 0);
+    REQUIRE(geradora.getTaxa() == TAXA_COLETA);
+    REQUIRE(geradora.getTipo() == RECURSO::PEDREGULHO);
+}
+
+TEST_CASE("Testando Enum"){
+    REQUIRE(RECURSO::PEDREGULHO == 1);
 }

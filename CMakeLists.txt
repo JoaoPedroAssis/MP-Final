@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.6)   # CMake version check
+set(CMAKE_CXX_STANDARD 11)            # Enable c++11 standard
+
+include_directories(include)
+include_directories(lib)
+include_directories(source)
+add_test(Teste source/teste/testeGeraRecursos.cpp)
+add_library(GeraRecursos source/GeraRecursos.cpp include/GeraRecursos.h source/Predio.cpp source/Objeto.cpp)
+add_library(Predio source/Predio.cpp include/Predio.h)
+add_library(Objeto source/Objeto.cpp include/Objeto.h)

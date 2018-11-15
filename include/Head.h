@@ -11,7 +11,6 @@
 #include "GeraRecursos.h"
 #include "Player.h"
 
-enum UNIDADE {Papel, Pedra, Tesoura};
-enum RECURSO {Celulose, Pedregulho, Metal};
-
+enum UNIDADE {PAPEL, PEDRA, TESOURA};
+enum RECURSO {CELULOSE, PEDREGULHO, METAL};
 

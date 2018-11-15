@@ -1,0 +1,5 @@
+/home/pedro/UNB/MP/MP-Final/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pedro/UNB/MP/MP-Final/cmake-build-debug/CMakeFiles/GeraRecursos.dir
+/home/pedro/UNB/MP/MP-Final/cmake-build-debug/CMakeFiles/Predio.dir
+/home/pedro/UNB/MP/MP-Final/cmake-build-debug/CMakeFiles/Objeto.dir
+/home/pedro/UNB/MP/MP-Final/cmake-build-debug/CMakeFiles/edit_cache.dir
