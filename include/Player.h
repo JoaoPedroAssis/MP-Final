@@ -17,11 +17,11 @@ public:
     int dinheiro;
     int pontos;
 
-    /* Listas de Objetos
-    vector<GeraRecursos*> lista_GeraRecursos;
-    vector<Fabrica*> lista_Fabrica;
-    vector<Unidade*> lista_Unidade;
-*/
+    /*Listas de Objetos*/
+    vector<GeraRecursos> lista_GeraRecursos;
+    vector<Fabrica> lista_Fabrica;
+    vector<Unidade> lista_Unidade;
+
     bool compra_GeraRecurso(int recurso);
 
     bool compra_Fabrica();

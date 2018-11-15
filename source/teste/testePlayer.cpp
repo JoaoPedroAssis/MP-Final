@@ -19,18 +19,17 @@ TEST_CASE("Compra_GeraRecursos", "Player"){
     Player jogador;
     SECTION(" Jogador sem dinheiro "){
         jogador.setDinheiro(0);
-        REQUIRE(jogador.compra_GeraRecurso(RECURSO::PEDREGULHO) == false);
+        REQUIRE(!jogador.compra_GeraRecurso(RECURSO::PEDREGULHO));
     }
     SECTION(" Jogador sem recurso"){
         jogador.setPedregulho(0);
-        REQUIRE(jogador.compra_GeraRecurso(RECURSO::PEDREGULHO) == false);
+        REQUIRE(!jogador.compra_GeraRecurso(RECURSO::PEDREGULHO));
     }
     SECTION("Jogador com recurso e dinheiro suficiente"){
         jogador.setPedregulho(1000);
         jogador.setDinheiro(1000);
-        REQUIRE(jogador.compra_GeraRecurso(RECURSO::PEDREGULHO) == true);
+        REQUIRE(jogador.compra_GeraRecurso(RECURSO::PEDREGULHO));
         REQUIRE(jogador.getDinheiro() == 1000 - PRECO_DINHEIRO_GERA);
         REQUIRE(jogador.getPedregulho() == 1000 - PRECO_RECURSO_GERA);
     }
-
 }

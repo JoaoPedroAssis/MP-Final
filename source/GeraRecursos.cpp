@@ -3,13 +3,16 @@
 //
 #include <GeraRecursos.h>
 
+
+void produzirRecurso(Player jogador){
+
+}
 /**
  * Construtor da class GeraRecursos
  * @brief
  *
  *
  */
- /* Construtor */
 GeraRecursos::GeraRecursos(int tipo) : tipo(tipo) {
     tipo = tipo;
 }

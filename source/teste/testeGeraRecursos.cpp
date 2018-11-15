@@ -22,6 +22,14 @@ TEST_CASE("Construtor da Classe"){
     REQUIRE(geradora.getTipo() == RECURSO::PEDREGULHO);
 }
 
+TEST_CASE("Produzir Recurso "){
+    GeraRecursos geradora( RECURSO::PEDREGULHO );
+    Player jogador;
+    int pedra_incial = jogador.getPedregulho();
+    geradora.produzirRecurso(jogador);
+    REQUIRE( jogador.getPedregulho() == pedra_incial += TAXA_COLETA );
+}
+
 TEST_CASE("Testando Enum"){
     REQUIRE(RECURSO::CELULOSE == 0);
     REQUIRE(RECURSO::PEDREGULHO == 1);

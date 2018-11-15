@@ -1,7 +1,6 @@
-//
-// Created by pedro on 15/11/18.
-//
 #include "../include/Player.h"
+
+/* "Copyright [2018] <Pedro>" */
 
 /**Construtor da classe Player
  * -------------------------
@@ -15,20 +14,32 @@ Player::Player() {
     dinheiro = DINHEIRO_INICIAL;
 }
 
-bool Player::compra_GeraRecurso(int recurso){
-    bool success = true; // Incializa a flag de sucesso
+/** coompra_GeraRecurso
+ *  @brief A função antes de comprar verifica se o espaço selecionado esta ocupado, ou é possivel,
+ *  se atinge o limite maximo de construcoes, caso as condicoes acima sao verificadas, a funcao
+ *  constroi uma geraRecurso do tipo de recursos, adiciona na lista geraRecursos e substrai o dinheiro
+ *  gasto
+ *
+ * @param recurso : tipo de recursos que se deseja comprar
+ * @return true : se for possivel comprar
+ *         false : se nao for possivel comprar
+ */
+bool Player::compra_GeraRecurso(int recurso) {
+    bool success = true;  // Incializa a flag de sucesso
     /* Se tiver recursos e dinheiro para comprar*/
-    if( Player::pedregulho > PRECO_RECURSO_GERA && Player::dinheiro > PRECO_DINHEIRO_GERA) {
+    if (Player::pedregulho > PRECO_RECURSO_GERA && Player::dinheiro > PRECO_DINHEIRO_GERA) {
         /* Retira os recusos da compra */
         Player::pedregulho -= PRECO_RECURSO_GERA;
         Player::dinheiro -= PRECO_DINHEIRO_GERA;
-        /* Compra*/
+        /* Compra */
+        GeraRecursos geradora(recurso);  /* Cria uma geradora de tal recurso */ // MELHORAR CONSTRUTOR
+        Player::lista_GeraRecursos.push_back(geradora);  /* Adiciona a geradora na lista GeraRecursos */
+        // ~geradora Free geradora
         success = true;
-    }else{
+    } else {/* Se o dinheiro ou recurso for insuficiente */
         success = false;
     }
     return success;
-
 }
 
 
