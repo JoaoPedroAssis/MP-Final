@@ -15,6 +15,11 @@ Player::Player() {
     dinheiro = DINHEIRO_INICIAL;
 }
 
+bool compra_GeraRecurso(int recurso){
+
+}
+
+
 int Player::getPedregulho() const {
     return pedregulho;
 }
