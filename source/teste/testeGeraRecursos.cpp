@@ -27,7 +27,7 @@ TEST_CASE("Produzir Recurso "){
     Player jogador;
     int pedra_incial = jogador.getPedregulho();
     geradora.produzirRecurso(jogador);
-    REQUIRE( jogador.getPedregulho() == pedra_incial += TAXA_COLETA );
+    REQUIRE( jogador.getPedregulho() == pedra_incial + TAXA_COLETA );
 }
 
 TEST_CASE("Testando Enum"){
