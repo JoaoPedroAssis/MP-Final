@@ -2,5 +2,8 @@
 #include "../include/Predio.h"
 
 void Predio::set_vida(int vida) {
-    vida = vida;
+    Predio::vida = vida;
+}
+
+int Predio::get_vida(){
 }

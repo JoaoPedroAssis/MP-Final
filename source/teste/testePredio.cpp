@@ -25,4 +25,10 @@ TEST_CASE("Constructor") {
         REQUIRE(y == 40);
         REQUIRE(img == "papeleira.png");
     }
+    SECTION("Set/Get life") {
+        Predio prd(30, 40, "papeleira.png");
+        prd.set_vida(100);
+        int life = prd.get_vida();
+        REQUIRE(life == 100);
+    }
 }
