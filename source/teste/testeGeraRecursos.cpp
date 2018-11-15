@@ -23,5 +23,7 @@ TEST_CASE("Construtor da Classe"){
 }
 
 TEST_CASE("Testando Enum"){
+    REQUIRE(RECURSO::CELULOSE == 0);
     REQUIRE(RECURSO::PEDREGULHO == 1);
+    REQUIRE(RECURSO::METAL == 2);
 }

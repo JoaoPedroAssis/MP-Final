@@ -46,6 +46,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/Player.dir/DependInfo.cmake"
+  "CMakeFiles/Teste.dir/DependInfo.cmake"
   "CMakeFiles/GeraRecursos.dir/DependInfo.cmake"
   "CMakeFiles/Predio.dir/DependInfo.cmake"
   "CMakeFiles/Objeto.dir/DependInfo.cmake"

@@ -12,6 +12,7 @@ public:
 
     GeraRecursos(int tipo);
 
+    /* Precisa da classe player pronto */
     void geraRecuros(Player jogador, char* recurso);
 
     ~GeraRecursos();

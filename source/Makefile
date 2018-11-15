@@ -11,7 +11,7 @@ LIBS=-lm
 _DEPS = GeraRecursos.h Head.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = teste/testeGeraRecursos.o GeraRecursos.o Predio.o Objeto.o
+_OBJ = teste/testeGeraRecursos.o GeraRecursos.o Predio.o Objeto.o teste/testePlayer.o Player.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 

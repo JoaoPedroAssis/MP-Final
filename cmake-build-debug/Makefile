@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/pedro/UNB/MP/MP-Final/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/pedro/clion-2018.2.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/pedro/clion-2018.2.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,32 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named Player
+
+# Build rule for target.
+Player: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Player
+.PHONY : Player
+
+# fast build rule for target.
+Player/fast:
+	$(MAKE) -f CMakeFiles/Player.dir/build.make CMakeFiles/Player.dir/build
+.PHONY : Player/fast
+
+#=============================================================================
+# Target rules for targets named Teste
+
+# Build rule for target.
+Teste: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Teste
+.PHONY : Teste
+
+# fast build rule for target.
+Teste/fast:
+	$(MAKE) -f CMakeFiles/Teste.dir/build.make CMakeFiles/Teste.dir/build
+.PHONY : Teste/fast
 
 #=============================================================================
 # Target rules for targets named GeraRecursos
@@ -206,6 +232,33 @@ source/Objeto.cpp.s:
 	$(MAKE) -f CMakeFiles/Objeto.dir/build.make CMakeFiles/Objeto.dir/source/Objeto.cpp.s
 .PHONY : source/Objeto.cpp.s
 
+source/Player.o: source/Player.cpp.o
+
+.PHONY : source/Player.o
+
+# target to build an object file
+source/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Player.dir/build.make CMakeFiles/Player.dir/source/Player.cpp.o
+.PHONY : source/Player.cpp.o
+
+source/Player.i: source/Player.cpp.i
+
+.PHONY : source/Player.i
+
+# target to preprocess a source file
+source/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Player.dir/build.make CMakeFiles/Player.dir/source/Player.cpp.i
+.PHONY : source/Player.cpp.i
+
+source/Player.s: source/Player.cpp.s
+
+.PHONY : source/Player.s
+
+# target to generate assembly for a file
+source/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Player.dir/build.make CMakeFiles/Player.dir/source/Player.cpp.s
+.PHONY : source/Player.cpp.s
+
 source/Predio.o: source/Predio.cpp.o
 
 .PHONY : source/Predio.o
@@ -236,26 +289,61 @@ source/Predio.cpp.s:
 	$(MAKE) -f CMakeFiles/Predio.dir/build.make CMakeFiles/Predio.dir/source/Predio.cpp.s
 .PHONY : source/Predio.cpp.s
 
+source/teste/testeGeraRecursos.o: source/teste/testeGeraRecursos.cpp.o
+
+.PHONY : source/teste/testeGeraRecursos.o
+
+# target to build an object file
+source/teste/testeGeraRecursos.cpp.o:
+	$(MAKE) -f CMakeFiles/Teste.dir/build.make CMakeFiles/Teste.dir/source/teste/testeGeraRecursos.cpp.o
+.PHONY : source/teste/testeGeraRecursos.cpp.o
+
+source/teste/testeGeraRecursos.i: source/teste/testeGeraRecursos.cpp.i
+
+.PHONY : source/teste/testeGeraRecursos.i
+
+# target to preprocess a source file
+source/teste/testeGeraRecursos.cpp.i:
+	$(MAKE) -f CMakeFiles/Teste.dir/build.make CMakeFiles/Teste.dir/source/teste/testeGeraRecursos.cpp.i
+.PHONY : source/teste/testeGeraRecursos.cpp.i
+
+source/teste/testeGeraRecursos.s: source/teste/testeGeraRecursos.cpp.s
+
+.PHONY : source/teste/testeGeraRecursos.s
+
+# target to generate assembly for a file
+source/teste/testeGeraRecursos.cpp.s:
+	$(MAKE) -f CMakeFiles/Teste.dir/build.make CMakeFiles/Teste.dir/source/teste/testeGeraRecursos.cpp.s
+.PHONY : source/teste/testeGeraRecursos.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
+	@echo "... Player"
+	@echo "... Teste"
 	@echo "... rebuild_cache"
 	@echo "... GeraRecursos"
 	@echo "... Predio"
 	@echo "... Objeto"
-	@echo "... edit_cache"
 	@echo "... source/GeraRecursos.o"
 	@echo "... source/GeraRecursos.i"
 	@echo "... source/GeraRecursos.s"
 	@echo "... source/Objeto.o"
 	@echo "... source/Objeto.i"
 	@echo "... source/Objeto.s"
+	@echo "... source/Player.o"
+	@echo "... source/Player.i"
+	@echo "... source/Player.s"
 	@echo "... source/Predio.o"
 	@echo "... source/Predio.i"
 	@echo "... source/Predio.s"
+	@echo "... source/teste/testeGeraRecursos.o"
+	@echo "... source/teste/testeGeraRecursos.i"
+	@echo "... source/teste/testeGeraRecursos.s"
 .PHONY : help
 
 
