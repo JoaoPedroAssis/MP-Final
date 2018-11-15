@@ -15,7 +15,19 @@ Player::Player() {
     dinheiro = DINHEIRO_INICIAL;
 }
 
-bool compra_GeraRecurso(int recurso){
+bool Player::compra_GeraRecurso(int recurso){
+    bool success = true; // Incializa a flag de sucesso
+    /* Se tiver recursos e dinheiro para comprar*/
+    if( Player::pedregulho > PRECO_RECURSO_GERA && Player::dinheiro > PRECO_DINHEIRO_GERA) {
+        /* Retira os recusos da compra */
+        Player::pedregulho -= PRECO_RECURSO_GERA;
+        Player::dinheiro -= PRECO_DINHEIRO_GERA;
+        /* Compra*/
+        success = true;
+    }else{
+        success = false;
+    }
+    return success;
 
 }
 
