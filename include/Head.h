@@ -14,8 +14,6 @@
 
 #define TAXA_COLETA 10
 
-using namespace std;
-
-enum UNIDADE {Papel, Pedra, Tesoura};
+enum TIPO {PAPEL, PEDRA, TESOURA};
 
 enum RECURSO {Celulose, Pedregulho, Metal};

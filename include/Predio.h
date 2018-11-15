@@ -4,6 +4,7 @@
 // #include "Menu.h"
 
 
+
 /**
  * @class Predio Predio.h
  *  
@@ -45,7 +46,7 @@ class Predio : public Objeto {
      * @return int vida 
      */
     int get_vida();
- 
+
  protected:
     int vida;
     //  Menu menu();

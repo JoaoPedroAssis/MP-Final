@@ -10,7 +10,7 @@ TEST_CASE("Compile") {
     }
 }
 
-TEST_CASE("Constructor") {
+TEST_CASE("Class Predio") {
     SECTION("Check inheritance") {
         // test case que verifica se a herança foi feita
         // corretamente
