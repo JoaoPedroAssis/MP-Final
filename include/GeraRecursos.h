@@ -1,15 +1,23 @@
-#pragma once
+#ifndef GERA_RECURSOS_H
+#define GERA_RECURSOS_H
+
 #include "Predio.h"
+#include "Player.h"
+#include "Head.h"
+
+#define TAXA_COLETA 10
 
 class GeraRecursos : public Predio {
 public:
-    GeraRecursos() : Predio() {} 
+    GeraRecursos(int tipo){}
     void mudaTaxa();
-    void geraRecuros(Player jogador, string recurso);
+    void geraRecuros(Player jogador, char* recurso);
     ~GeraRecursos();
 private:
-    int nivel;
-    int taxa;
-    int tipo;
+    int nivel = 0; //Nivel incial 0
+    int taxa = TAXA_COLETA; //Taxa de coleta inicial TAXA_COLETA
+    int tipo; //Selecionado pelo construtor
 
 };
+
+#endif //GERA_RECURSOS_H

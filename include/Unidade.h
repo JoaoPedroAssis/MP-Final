@@ -13,5 +13,4 @@ protected:
     int vida;
     int velocidade;
     int dano;
-
 };
