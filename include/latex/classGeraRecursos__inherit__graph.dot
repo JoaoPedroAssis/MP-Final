@@ -4,7 +4,7 @@ digraph "GeraRecursos"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="GeraRecursos",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="Predio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPredio.html"];
+  Node2 [label="Predio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPredio.html",tooltip="Classe Predio, responsável pelo gerenciamento geral de todos os prédios presente no jogo..."];
   Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node3 [label="Objeto",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classObjeto.html",tooltip="Classe Objeto, responsável pela rederização da posição e imagem de todos os objetos do jogo (unidades..."];
 }

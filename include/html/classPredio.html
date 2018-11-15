@@ -84,13 +84,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classPredio-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Predio Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Classe <a class="el" href="classPredio.html" title="Classe Predio, responsável pelo gerenciamento geral de todos os prédios presente no jogo...">Predio</a>, responsável pelo gerenciamento geral de todos os prédios presente no jogo. Herda a classe <a class="el" href="classObjeto.html" title="Classe Objeto, responsável pela rederização da posição e imagem de todos os objetos do jogo (unidades...">Objeto</a>, portanto possui uma posição e imagem associada.  
+ <a href="classPredio.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Predio_8h_source.html">Predio.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Predio:</div>
 <div class="dyncontent">
@@ -106,12 +110,25 @@ Collaboration diagram for Predio:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ade4ff616f1a63a65738be1b2c85c0cb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPredio.html#ade4ff616f1a63a65738be1b2c85c0cb3">Predio</a> (int X, int Y, char *image_name)</td></tr>
+<tr class="memdesc:ade4ff616f1a63a65738be1b2c85c0cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constrói um objeto Prédio O Prédio é construído da mesa maneira que um <a class="el" href="classObjeto.html" title="Classe Objeto, responsável pela rederização da posição e imagem de todos os objetos do jogo (unidades...">Objeto</a>, pois a inicialização da variável "vida" é de responsabilidade da classe <a class="el" href="classFabrica.html">Fabrica</a>.  <a href="#ade4ff616f1a63a65738be1b2c85c0cb3">More...</a><br /></td></tr>
+<tr class="separator:ade4ff616f1a63a65738be1b2c85c0cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef23b892d39d15b9aab03d77628cffa0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef23b892d39d15b9aab03d77628cffa0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> ()</td></tr>
 <tr class="separator:aef23b892d39d15b9aab03d77628cffa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af727252390373e3dc0e40641fd79dc37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af727252390373e3dc0e40641fd79dc37"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPredio.html#af727252390373e3dc0e40641fd79dc37">~Predio</a> ()</td></tr>
+<tr class="memdesc:af727252390373e3dc0e40641fd79dc37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrói o objeto <a class="el" href="classPredio.html" title="Classe Predio, responsável pelo gerenciamento geral de todos os prédios presente no jogo...">Predio</a>. <br /></td></tr>
+<tr class="separator:af727252390373e3dc0e40641fd79dc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8161d6dc412b3f22b00181c89aff1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPredio.html#a5d8161d6dc412b3f22b00181c89aff1a">set_vida</a> (int vida)</td></tr>
+<tr class="memdesc:a5d8161d6dc412b3f22b00181c89aff1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa a variável vida.  <a href="#a5d8161d6dc412b3f22b00181c89aff1a">More...</a><br /></td></tr>
+<tr class="separator:a5d8161d6dc412b3f22b00181c89aff1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bdabeda71179578f79ce6c5270156d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPredio.html#a8bdabeda71179578f79ce6c5270156d6">get_vida</a> ()</td></tr>
+<tr class="memdesc:a8bdabeda71179578f79ce6c5270156d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a variável vida.  <a href="#a8bdabeda71179578f79ce6c5270156d6">More...</a><br /></td></tr>
+<tr class="separator:a8bdabeda71179578f79ce6c5270156d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classObjeto"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classObjeto')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classObjeto.html">Objeto</a></td></tr>
-<tr class="memitem:a9c9927529170f4d17fd926c83266c7a8 inherit pub_methods_classObjeto"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c9927529170f4d17fd926c83266c7a8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Objeto</b> (int X, int Y, char *image_name)</td></tr>
+<tr class="memitem:a9c9927529170f4d17fd926c83266c7a8 inherit pub_methods_classObjeto"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjeto.html#a9c9927529170f4d17fd926c83266c7a8">Objeto</a> (int X, int Y, char *image_name)</td></tr>
+<tr class="memdesc:a9c9927529170f4d17fd926c83266c7a8 inherit pub_methods_classObjeto"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constrói um objeto <a class="el" href="classObjeto.html" title="Classe Objeto, responsável pela rederização da posição e imagem de todos os objetos do jogo (unidades...">Objeto</a> Recebe as coordenadas e o nome do arquivo que contém a imagem.  <a href="#a9c9927529170f4d17fd926c83266c7a8">More...</a><br /></td></tr>
 <tr class="separator:a9c9927529170f4d17fd926c83266c7a8 inherit pub_methods_classObjeto"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a294bd02cea8cbee25f423f37fac91b2a inherit pub_methods_classObjeto"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a294bd02cea8cbee25f423f37fac91b2a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> ()</td></tr>
@@ -135,12 +152,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> ()</td></t
 <tr class="memdesc:aebe9ae03165a9e25fa4677512ea0b6d1 inherit pub_methods_classObjeto"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa o nome do arquivo que contém a imagem do objeto.  <a href="#aebe9ae03165a9e25fa4677512ea0b6d1">More...</a><br /></td></tr>
 <tr class="separator:aebe9ae03165a9e25fa4677512ea0b6d1 inherit pub_methods_classObjeto"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6fc09c1519288eba8bbda8dea346f994"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fc09c1519288eba8bbda8dea346f994"></a>
-<a class="el" href="classMenu.html">Menu</a>&#160;</td><td class="memItemRight" valign="bottom"><b>menu</b> ()</td></tr>
-<tr class="separator:a6fc09c1519288eba8bbda8dea346f994"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a6d3adf25183062c54ea41c5b3c976e1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d3adf25183062c54ea41c5b3c976e1f"></a>
@@ -161,6 +172,102 @@ Additional Inherited Members</h2></td></tr>
 char *&#160;</td><td class="memItemRight" valign="bottom"><b>imagem</b></td></tr>
 <tr class="separator:a61c427cd37407e5e28d01d441708adff inherit pub_attribs_classObjeto"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Classe <a class="el" href="classPredio.html" title="Classe Predio, responsável pelo gerenciamento geral de todos os prédios presente no jogo...">Predio</a>, responsável pelo gerenciamento geral de todos os prédios presente no jogo. Herda a classe <a class="el" href="classObjeto.html" title="Classe Objeto, responsável pela rederização da posição e imagem de todos os objetos do jogo (unidades...">Objeto</a>, portanto possui uma posição e imagem associada. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ade4ff616f1a63a65738be1b2c85c0cb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Predio::Predio </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>image_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constrói um objeto Prédio O Prédio é construído da mesa maneira que um <a class="el" href="classObjeto.html" title="Classe Objeto, responsável pela rederização da posição e imagem de todos os objetos do jogo (unidades...">Objeto</a>, pois a inicialização da variável "vida" é de responsabilidade da classe <a class="el" href="classFabrica.html">Fabrica</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td></td></tr>
+    <tr><td class="paramname">Y</td><td></td></tr>
+    <tr><td class="paramname">image_name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8bdabeda71179578f79ce6c5270156d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Predio::get_vida </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna a variável vida. </p>
+<dl class="section return"><dt>Returns</dt><dd>int vida </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d8161d6dc412b3f22b00181c89aff1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Predio::set_vida </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vida</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa a variável vida. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vida</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="Predio_8h_source.html">Predio.h</a></li>
 </ul>

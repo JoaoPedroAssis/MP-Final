@@ -7,7 +7,7 @@ digraph "Graphical Class Hierarchy"
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="Menu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMenu.html"];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="Predio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPredio.html"];
+  Node3 [label="Predio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPredio.html",tooltip="Classe Predio, responsável pelo gerenciamento geral de todos os prédios presente no jogo..."];
   Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="Fabrica",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFabrica.html"];
   Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

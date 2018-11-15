@@ -14,6 +14,14 @@
  */
 class Objeto {
  public:
+    /**
+     * @brief Constrói um objeto Objeto
+     *   Recebe as coordenadas e o nome do arquivo que contém a imagem
+     * 
+     * @param X - Coordenada X
+     * @param Y - Coordenada Y
+     * @param image_name - Nome da imagem a ser carregada
+     */
     Objeto(int X, int Y, char* image_name);
     char* imagem;
     // por fazer
