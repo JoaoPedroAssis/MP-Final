@@ -1,12 +1,17 @@
+// Copyright 2018 João Pedro Assis
 #pragma once
 #include "Predio.h"
 
+/**
+ * @brief 
+ * 
+ */
 class Fabrica : public Predio {
-public:
+ public:
     Fabrica() : Predio() {}
     void geraUnidade();
     ~Fabrica();
-protected:
+ protected:
     int tempoEspera;
     int nivel;
     int tipo;

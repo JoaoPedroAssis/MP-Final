@@ -1,3 +1,4 @@
+// Copyright 2018 Switch Dreams
 #pragma once
 
 #include <iostream>
@@ -11,4 +12,10 @@
 #include "GeraRecursos.h"
 #include "Player.h"
 
+#define TAXA_COLETA 10
 
+using namespace std;
+
+enum UNIDADE {Papel, Pedra, Tesoura};
+
+enum RECURSO {Celulose, Pedregulho, Metal};
