@@ -1,5 +1,4 @@
 #include "../include/Player.h"
-
 /* "Copyright [2018] <Pedro>" */
 
 /**Construtor da classe Player
@@ -81,4 +80,8 @@ int Player::getPontos() const {
 
 void Player::setPontos(int pontos) {
     Player::pontos = pontos;
+}
+
+Player::~Player() {
+
 }

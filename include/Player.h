@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PLAYER_H
+#define PLAYER_H
 
 #include <vector>
 #include "Head.h"
@@ -9,8 +10,12 @@ using namespace std;
 
 class Player {
 public:
-    Player();
+    /* funcionalidades */
+    bool compra_GeraRecurso(int recurso);
 
+    bool compra_Fabrica();
+
+    bool atualizar_recursos();
     int pedregulho; //pedra
     int celulose;   //papel
     int metal;      //tesoura
@@ -21,11 +26,12 @@ public:
     vector<GeraRecursos> lista_GeraRecursos;
     vector<Fabrica> lista_Fabrica;
     vector<Unidade> lista_Unidade;
+    /* Construtor e destrutor */
+    Player();
 
-    bool compra_GeraRecurso(int recurso);
+    virtual ~Player();
 
-    bool compra_Fabrica();
-
+    /* Get e Set*/
     int getPedregulho() const;
 
     void setPedregulho(int pedregulho);
@@ -46,5 +52,6 @@ public:
 
     void setPontos(int pontos);
     /* Listas ver como fazer */
-
 };
+
+#endif //PLAYER_H

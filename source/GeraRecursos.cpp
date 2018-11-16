@@ -3,14 +3,29 @@
 //
 #include <GeraRecursos.h>
 
-
-void produzirRecurso(Player jogador){
-
-}
 /**
- * Construtor da class GeraRecursos
- * @brief
- *
+ * Produzir Recurso
+ * @brief acrescenta o recurso dessa determinada geradora(de acordo com a taxa) para o jogador passado de parametro
+ * @param jogador - Jogador no qual sera adicionado o recurso
+ */
+/*void GeraRecursos::produzirRecurso(Player jogador){
+    switch(GeraRecursos::getTipo()){
+        case RECURSO::CELULOSE:
+            jogador.setCelulose(jogador.getCelulose() + GeraRecursos::getTaxa());
+            return;
+        case RECURSO ::PEDREGULHO:
+            jogador.setPedregulho(jogador.getPedregulho() + GeraRecursos::getTaxa());
+            return;
+        case RECURSO ::METAL:
+            jogador.setMetal(jogador.getMetal() + GeraRecursos::getTaxa());
+            return;
+        default:
+            printf("Gerando Recurso Errado - func:produzirRecurso");
+            return;
+    }
+}*/
+
+/** Construtor meio ruim*
  *
  */
 GeraRecursos::GeraRecursos(int tipo) : tipo(tipo) {
@@ -18,9 +33,7 @@ GeraRecursos::GeraRecursos(int tipo) : tipo(tipo) {
 }
 
 /* Destructor */
-GeraRecursos::~GeraRecursos() {
-
-}
+GeraRecursos::~GeraRecursos() = default;
 
 /* Get e Setters */
 int GeraRecursos::getNivel() const {

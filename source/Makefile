@@ -8,10 +8,10 @@ LDIR =../lib
 
 LIBS=-lm
 
-_DEPS = GeraRecursos.h Head.h
+_DEPS = Head.h GeraRecursos.h Player.h Objeto.h Predio.h Unidade.h Fabrica.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = teste/testeGeraRecursos.o GeraRecursos.o Predio.o Objeto.o teste/testePlayer.o Player.o
+_OBJ = Objeto.o Player.o teste/testePlayer.o GeraRecursos.o Predio.o Fabrica.o Unidade.o teste/testeGeraRecursos.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 

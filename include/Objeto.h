@@ -1,5 +1,4 @@
 #pragma once
-#include "Objeto.h"
 
 class Objeto {
 public:

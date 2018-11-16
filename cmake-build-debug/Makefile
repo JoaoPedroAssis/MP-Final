@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Fabrica
+
+# Build rule for target.
+Fabrica: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Fabrica
+.PHONY : Fabrica
+
+# fast build rule for target.
+Fabrica/fast:
+	$(MAKE) -f CMakeFiles/Fabrica.dir/build.make CMakeFiles/Fabrica.dir/build
+.PHONY : Fabrica/fast
+
+#=============================================================================
 # Target rules for targets named Player
 
 # Build rule for target.
@@ -174,6 +187,33 @@ Objeto: cmake_check_build_system
 Objeto/fast:
 	$(MAKE) -f CMakeFiles/Objeto.dir/build.make CMakeFiles/Objeto.dir/build
 .PHONY : Objeto/fast
+
+source/Fabrica.o: source/Fabrica.cpp.o
+
+.PHONY : source/Fabrica.o
+
+# target to build an object file
+source/Fabrica.cpp.o:
+	$(MAKE) -f CMakeFiles/Fabrica.dir/build.make CMakeFiles/Fabrica.dir/source/Fabrica.cpp.o
+.PHONY : source/Fabrica.cpp.o
+
+source/Fabrica.i: source/Fabrica.cpp.i
+
+.PHONY : source/Fabrica.i
+
+# target to preprocess a source file
+source/Fabrica.cpp.i:
+	$(MAKE) -f CMakeFiles/Fabrica.dir/build.make CMakeFiles/Fabrica.dir/source/Fabrica.cpp.i
+.PHONY : source/Fabrica.cpp.i
+
+source/Fabrica.s: source/Fabrica.cpp.s
+
+.PHONY : source/Fabrica.s
+
+# target to generate assembly for a file
+source/Fabrica.cpp.s:
+	$(MAKE) -f CMakeFiles/Fabrica.dir/build.make CMakeFiles/Fabrica.dir/source/Fabrica.cpp.s
+.PHONY : source/Fabrica.cpp.s
 
 source/GeraRecursos.o: source/GeraRecursos.cpp.o
 
@@ -289,6 +329,33 @@ source/Predio.cpp.s:
 	$(MAKE) -f CMakeFiles/Predio.dir/build.make CMakeFiles/Predio.dir/source/Predio.cpp.s
 .PHONY : source/Predio.cpp.s
 
+source/Unidade.o: source/Unidade.cpp.o
+
+.PHONY : source/Unidade.o
+
+# target to build an object file
+source/Unidade.cpp.o:
+	$(MAKE) -f CMakeFiles/GeraRecursos.dir/build.make CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.o
+.PHONY : source/Unidade.cpp.o
+
+source/Unidade.i: source/Unidade.cpp.i
+
+.PHONY : source/Unidade.i
+
+# target to preprocess a source file
+source/Unidade.cpp.i:
+	$(MAKE) -f CMakeFiles/GeraRecursos.dir/build.make CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.i
+.PHONY : source/Unidade.cpp.i
+
+source/Unidade.s: source/Unidade.cpp.s
+
+.PHONY : source/Unidade.s
+
+# target to generate assembly for a file
+source/Unidade.cpp.s:
+	$(MAKE) -f CMakeFiles/GeraRecursos.dir/build.make CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.s
+.PHONY : source/Unidade.cpp.s
+
 source/teste/testeGeraRecursos.o: source/teste/testeGeraRecursos.cpp.o
 
 .PHONY : source/teste/testeGeraRecursos.o
@@ -323,12 +390,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... Fabrica"
 	@echo "... Player"
 	@echo "... Teste"
 	@echo "... rebuild_cache"
 	@echo "... GeraRecursos"
 	@echo "... Predio"
 	@echo "... Objeto"
+	@echo "... source/Fabrica.o"
+	@echo "... source/Fabrica.i"
+	@echo "... source/Fabrica.s"
 	@echo "... source/GeraRecursos.o"
 	@echo "... source/GeraRecursos.i"
 	@echo "... source/GeraRecursos.s"
@@ -341,6 +412,9 @@ help:
 	@echo "... source/Predio.o"
 	@echo "... source/Predio.i"
 	@echo "... source/Predio.s"
+	@echo "... source/Unidade.o"
+	@echo "... source/Unidade.i"
+	@echo "... source/Unidade.s"
 	@echo "... source/teste/testeGeraRecursos.o"
 	@echo "... source/teste/testeGeraRecursos.i"
 	@echo "... source/teste/testeGeraRecursos.s"

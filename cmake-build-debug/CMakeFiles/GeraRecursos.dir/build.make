@@ -96,11 +96,25 @@ CMakeFiles/GeraRecursos.dir/source/Objeto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeraRecursos.dir/source/Objeto.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedro/UNB/MP/MP-Final/source/Objeto.cpp -o CMakeFiles/GeraRecursos.dir/source/Objeto.cpp.s
 
+CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.o: CMakeFiles/GeraRecursos.dir/flags.make
+CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.o: ../source/Unidade.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pedro/UNB/MP/MP-Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.o -c /home/pedro/UNB/MP/MP-Final/source/Unidade.cpp
+
+CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pedro/UNB/MP/MP-Final/source/Unidade.cpp > CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.i
+
+CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedro/UNB/MP/MP-Final/source/Unidade.cpp -o CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.s
+
 # Object files for target GeraRecursos
 GeraRecursos_OBJECTS = \
 "CMakeFiles/GeraRecursos.dir/source/GeraRecursos.cpp.o" \
 "CMakeFiles/GeraRecursos.dir/source/Predio.cpp.o" \
-"CMakeFiles/GeraRecursos.dir/source/Objeto.cpp.o"
+"CMakeFiles/GeraRecursos.dir/source/Objeto.cpp.o" \
+"CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.o"
 
 # External object files for target GeraRecursos
 GeraRecursos_EXTERNAL_OBJECTS =
@@ -108,9 +122,10 @@ GeraRecursos_EXTERNAL_OBJECTS =
 libGeraRecursos.a: CMakeFiles/GeraRecursos.dir/source/GeraRecursos.cpp.o
 libGeraRecursos.a: CMakeFiles/GeraRecursos.dir/source/Predio.cpp.o
 libGeraRecursos.a: CMakeFiles/GeraRecursos.dir/source/Objeto.cpp.o
+libGeraRecursos.a: CMakeFiles/GeraRecursos.dir/source/Unidade.cpp.o
 libGeraRecursos.a: CMakeFiles/GeraRecursos.dir/build.make
 libGeraRecursos.a: CMakeFiles/GeraRecursos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pedro/UNB/MP/MP-Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libGeraRecursos.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pedro/UNB/MP/MP-Final/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libGeraRecursos.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/GeraRecursos.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GeraRecursos.dir/link.txt --verbose=$(VERBOSE)
 

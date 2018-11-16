@@ -6,13 +6,12 @@
 #define TAXA_COLETA 5
 #define PRECO_RECURSO_GERA 50
 #define PRECO_DINHEIRO_GERA 100
-
 class GeraRecursos : public Predio {
 public:
     GeraRecursos(int tipo);
 
     /* Precisa da classe player pronto */
-    void produzirRecurso(Player jogador);
+    void produzirRecurso();
 
     ~GeraRecursos();
 
@@ -38,5 +37,5 @@ private:
     int preco_dinheiro = PRECO_DINHEIRO_GERA;
 
 };
-
 #endif //GERA_RECURSOS_H
+

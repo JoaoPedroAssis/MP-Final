@@ -9,7 +9,6 @@
 #include "Unidade.h"
 #include "Fabrica.h"
 #include "GeraRecursos.h"
-#include "Player.h"
 
 enum UNIDADE {PAPEL, PEDRA, TESOURA};
 enum RECURSO {CELULOSE, PEDREGULHO, METAL};
